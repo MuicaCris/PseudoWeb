@@ -1,0 +1,134 @@
+@import url(http://127.0.0.1:5500/page.html);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin';
+}
+
+@font-face {
+  font-family: Cabin;
+  src: url(Cabin-Regular-TTF.ttf);
+}
+
+@keyframes move-twinkle-back {
+  0% {background-position: -5000px 1500px;}
+  50% {background-position: -10000px 4500px;}
+}
+
+@keyframes move-twinkle-front {
+  0% {background-position: -10000px 4500px;}
+  50% {background-position: 5000px -1500px;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.stars, .twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -10; 
+}
+
+.stars {
+  background: #000 url(stars.png) repeat top center;
+  animation: move-twinkle-back 300s linear infinite;
+}
+
+.twinkling {
+  background: transparent url(twinkling.png) repeat top center;
+  animation: move-twinkle-front 300s linear infinite;
+}
+
+:root {
+  --background-color: #000;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.stars {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+img {
+    width: 150px;
+    height: 100px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section .text-container {
+    margin: 10px;
+}
+
+section .text-container .text-box {
+    padding: 30px;
+    line-height: 25px;
+}
+
+.top-left-section {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .top-right-section {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .bottom-left-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+  
+  .bottom-right-section {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+  }
+
