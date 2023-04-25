@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="utility.css">
+
+    <title>Pseudo</title>
+</head>
+<body>
+    
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+
+    <div class="MiniLogo">
+        <a href="index.html"><img src="MiniLogo.png"></a>
+    </div>
+
+    <section class="text">
+        <h2><h1>Variabile și constante</h1><br>
+
+            În pseudocod variabilele nu se declară, iar numele lor respectă regula uzuală a identificatorilor – litere, cifre, caracterul de subliniere și să nu înceapă cu cifră.<p></p>
+            
+            Constantele care apar de regulă în algoritmii pseudocod sunt constante literale (valori numerice, întregi sau reale, caractere – delimitate prin apostrof ‘, șiruri de caractere – delimitate prin apostroafe (‘) sau ghilimele (“). De asemenea, pot să apară constante matematice, de exemplu <b>π</b>.<br>
+            <h1>Operații</h1><br>
+            
+            Sunt prezente toate operațiile aritmetice uzuale:
+            
+                <div><li>adunarea a două numere: <b>a+b</b>. În funcție de context, rezultatul este întreg sau real.</li>
+                <li>scăderea a două numere: <b>a-b</b>. În funcție de context, rezultatul este întreg sau real.</li>
+                <li>înmulțirea a două numere: <b>a*b</b>. În funcție de context, rezultatul este întreg sau real.</li>
+                <li>împărțirea a două numere: <b>a/b</b>. Rezultatul se consideră real. Dacă se dorește determinarea câtului împărțirii a două numere naturale, se va folosi partea întreagă a rezultatului împărțirii: [a/b].</li>
+                <li>restul împărțirii a două numere întregi: <b>a%b</b>. Se aplică numai pentru date întregi, iar rezultatul este număr întreg.</li></div><br>
+            
+            <b>Notă:</b> Unele variante pseudocod propun operațiile <b>DIV</b> și <b>MOD</b> pentru determinarea câtului și restului împărțirii a două numere întregi. De asemenea, pot să apară operații de ridicare la putere, în forma <b>a<span>&#8319</span></b>
+            , sau de extragere a rădăcinii pătrate <b>√x</b>.<br>
+            
+            Operațiile relaționale sunt:<p>
+            
+                <div><li>= – egalitatea</li>
+                <li>≠ – neegalitatea</li>
+                <li>< – mai mic</li>
+                <li>≤ – mai mic sau egal</li>
+                <li>> – mai mare</li>
+                <li>≥ – mai mare sau egal</li></div><br>
+            
+            Operanzii sunt de regulă numere, iar rezultatul este valoare de adevăr (adevărat sau fals).<p>
+            
+            Operațiile logice sunt NOT, ȘI, SAU – cu semnificațiile cunoscute. O descriere a operațiilor logice poate fi găsită aici: <a href="https://www.pbinfo.ro/articole/21315/operatii-logice">www.pbinfo.ro/articole/21315/operatii-logice</a>.<br>
+            <h1><b>Instrucțiuni</b></h1><br>
+            
+            Instrucțiunile sunt componentele algoritmului care au efect, atunci când se execută. Ele modifică valorile unor variabile, citesc sau afișează date, repetă anumite acțiuni, etc.<p>
+            
+            De regulă fiecare instrucțiune se scrie pe o linie (sau mai multe în cazul celor complexe), dar există situații când, pentru a economisi spațiu, două sau mai multe instrucțiuni simple se scriu pe același rând, separate prin <b>;</b>.<br>
+            
+            Orice algoritm poate fi reprezentat prin intermediul a trei tipuri de structuri:<br>
+            
+                <p><li>structura liniară</li>
+                <li>structura alternativă</li>
+                <li>structura repetitivă</li>
+                    <li>structura repetitivă cu număr necunoscut de pași</li>
+                        <li>structura repetitivă cu număr necunoscut de pași și test inițial</li>
+                        <li>structura repetitivă cu număr necunoscut de pași și test final</li>
+                    <li>structura repetitivă cu număr cunoscut de pași</li></p><br>
+            
+            <h1>Citirea</h1><br>
+            
+            Pentru citirea datelor se folosește instrucțiunea citește <b>(listă variabile)</b>, unde <b>(listă variabile)</b> reprezintă un șir de variabile separate prin caracterul ,. Se preiau valori succesive de la tastatură și se memorează în variabilele din listă. <br>
+            
+            <p><b>Exemplu</b></p>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    citeste a , b , c
+                </div>
+            </div>
+            
+            Citirea datelor este frecvent însoțită de precizări privind datele citite (tip, valori posibile. etc.).<br>
+            <h1>Afișarea</h1> <br>
+            
+            Pentru afișarea datelor se folosește instrucțiunea scrie &#60;listă expresii>, unde &#60;listă expresii> reprezintă un șir de expresii separate prin caracterul ,. Se evaluează în ordine expresiile din listă și se afisează pe ecran rezultatele lor.<br>
+            
+            <b>Exemplu</b>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    scrie 'a + b = ' , a + b
+                </div>
+            </div>
+            Dacă a = 3 și b = 4 se va afișa:
+            
+            <div class="text-container">
+                <div class="text-box">
+                    a + b = 7
+                </div>
+            </div>
+            <h1>Atribuirea</h1> <br>
+            
+            Pentru atribuire se folosește instructiunea <b>&#60;variabilă> ← &#60;expresie></b>. Se evaluază expresia, iar valoarea obținută se memorează in variabilă.<br>
+            
+            <b>Exemple:</b>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    a ← 0<p>
+                    S ← a + b<p>
+                    i ← i + 1<p>
+                </div>
+            </div>
+            
+            <b>Structura alternativă:</b><br>
+            
+            În pseudocod există instrucțiunea daca, cu următoarea sintaxă:
+            
+            <div class="text-container">
+                <div class="text-box">
+                    ┌ daca &#60;conditie> atunci<p>
+                    │    &#60;instructiuni1><p>
+                    │ altfel<p>
+                    │    &#60;instructiuni2><p>
+                    └■
+                </div>
+            </div>
+            
+            sau
+            
+            <div class="text-container">
+                <div class="text-box">
+                    ┌ daca &#60;conditie> atunci<p>
+                    │    &#60;instructiuni1><p>
+                    └■
+                    </div>
+            </div>
+
+            <h1>Structuri repetive</h1><br>
+            <h1>Structura repetitivă cu număr cunoscut de pași</h1><br>
+            Instrucțiunea <b>PENTRU</b><br>
+            
+            <b>Sintaxă</b>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    ┌ pentru <b>&#60;variabila> ← &#60;expresie initiala>, &#60;expresie finala> , &#60;pas></b> executa<p>
+                    │    (instructiuni)<p>
+                    └■
+                </div>
+            </div>
+            
+            unde <b>expresie initiala, expresie finala și pas</b> sunt expresii cu rezultat (de regulă) întreg, iar pas poate fi 1 sau -1 și poate lipsi, caz în care se consideră că este 1.<br>
+            
+            <b>variabila</b> primește pe rând valori crescătoare (dacă pas = 1) sau descrescătoare (dacă pas = -1) începând de la <b>expresie initiala</b> până la <b>expresie finala</b>, și pentru fiecare valoare se execută secvența <b>instructiuni</b>.<br>
+            
+            Dacă <b>pas = 1</b> și <b>expresie initiala > expresie finala></b>, secvența instructiuni nu se va executa deloc. La fel se întâmplă când <b>&#60;pas = -1</b> și <b>expresie initiala < expresie finala</b>. În caz contrar numărul de pași este <b>expresie initială - expresie finala + 1</b>, dacă <b>&#60;pas = 1</b>, respectiv <b>expresie finală - expresie initiala + 1</b>, <b>dacă pas=-1</b>.<br>
+            
+            <b>Exemplu</b><br>
+            
+            Determinarea sumei și produsului primelor n numere naturale:<br>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    S ← 0; P ← 1<br>
+                    ┌ pentru i←1,n executa<br>
+                    │    S ← S + i<br>
+                    │    P ← P * i<br>
+                    └■<br>
+                    scrie S, ' ' , P
+                </div>
+            </div>
+            
+            <h1>Structura repetitivă cu număr necunoscut de pasi și test inițial</h1><br>
+            Instrucțiunea <b>CÂT TIMP … EXECUTĂ</b><br>
+            
+            <b>Sintaxă</b>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    ┌ cat timp &#60;conditie> executa<br>
+                    │    &#60;instructiuni><br>
+                    └■
+                </div>
+            </div>
+            
+            <b>Important:</b> Dacă condiția este de la început falsă, instrucțiunile nu se vor executa deloc!<br>
+            
+            <b>Exemplu</b><br>
+            
+            Determinarea sumei cifrelor unui număr natural:<br>
+            
+            <div class="text-container">
+                <div class="text-box">
+                    citeste n<br>
+                    S ← 0<br>
+                    ┌ cat timp n ≠ 0 executa<br>
+                    │    S ← S + n % 10<br>
+                    │    n ← [n/10]<br>
+                    └■<br>
+                    scrie S
+                </div>
+            </div>
+            
+            <h1>Structura repetitivă cu număr necunoscut de pasi și test final</h1><br>
+
+            <section class="container">
+                <div class="left-section">
+
+                    Instrucțiunea <b>EXECUTA … CAT TIMP</b><br>
+                    
+                    <b>Sintaxă</b>
+                    <div class="text-container">
+                        <div class="text-box">
+                            ┌ executa<br>
+                            │    &#60;instructiuni><br>
+                            └ cat timp &#60;conditie>
+                        </div>
+                    </div>
+                    
+                    <b>Important:</b> Chiar dacă condiția este de la început falsă, instrucțiunile s-au executat deja o dată!<br>
+                    
+                    <b>Exemplu</b><br>
+                    
+                    Numărul cifrelor unui număr natural:
+                    
+                    <div class="text-container">
+                        <div class="text-box">
+                            citeste n<br>
+                            cnt ← 0<br>
+                            ┌ executa<br>
+                            │    cnt ← cnt + 1<br>
+                            │    n ← [n/10]<br>
+                            └ cat timp n ≠ 0<br>
+                            scrie cnt
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-section">
+
+                    Instrucțiunea <b>REPETA … PANA CAND</b><br>
+                    
+                    <b>Sintaxă</b><br>
+                    
+                    <div class="text-container">
+                        <div class="text-box">
+                            ┌ repeta<br>
+                            │    &#60;instructiuni><br>
+                            └ pana cand &#60;conditie>
+                        </div>
+                    </div>
+                    
+                    <b>Important:</b> Chiar dacă condiția este de la început adevărată, instrucțiunile s-au executat deja o dată!<br>
+                    
+                    <b>Exemplu</b><br>
+                    
+                    Numărul cifrelor unui număr natural:
+                    
+                    <div class="text-container">
+                        <div class="text-box">
+                            citeste n<br>
+                            cnt ← 0<br>
+                            ┌ repeta<br>
+                            │    cnt ← cnt + 1<br>
+                            │    n ← [n/10]<br>
+                            └ pana cand n = 0<br>
+                            scrie cnt
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <h1>Echivalența structurilor repetitive</h1><br>
+            
+            Numeroase exerciții propun un algoritm și se cere scrierea unui algoritm echivalent care să folosească o structură repetitivă de alt tip. Doi algoritmi sunt echivalenți dacă pentru orice set de date de intrare (conforme cu restricțiile problemei) ei obțin aceleași rezultate.<br>
+            
+            Această secțiune descrie câteva reguli de transformare a structurilor repetitive din algoritmii pseudocod.
+            
+            <h1>PENTRU → CÂTTIMP</h1>
+            
+                <section class="container">
+                    
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ pentru i←a,b executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                i ← a<br>
+                                ┌ cattimp i ≤ b executa<br>
+                                │     &#60;instructiuni><br>
+                                │     i ← i + 1
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                    <h1>PENTRU → EXECUTĂ … CÂTTIMP</h1>
+                
+                <section class="container">
+
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ pentru i←a,b executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                i ← a<br>
+                                ┌ daca i ≤ b atunci<br>
+                                │┌ executa<br>
+                                ││     &#60;instructiuni><br>
+                                ││     i ← i + 1<br>
+                                │└ cattimp i ≤ b<br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <h1>PENTRU → REPETĂ … PÂNÂCÂND</h1>
+                    
+                <section class="container">
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ pentru i←a,b executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                i ← a<br>
+                                ┌ daca i ≤ b atunci<br>
+                                │┌ repeta<br>
+                                ││     &#60;instructiuni><br>
+                                ││     i ← i + 1<br>
+                                │└ panacand i > b<br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                
+                </section>
+
+                    <h1>CÂTTIMP → EXECUTĂ … CÂTTIMP</h1>
+                    
+                <section class="container">
+
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ cattimp &#60;conditie> executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ daca &#60;conditie> atunci<br>
+                                │┌ executa<br>
+                                ││     &#60;instructiuni><br>
+                                │└ cattimp &#60;conditie><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                    <h1>CÂTTIMP → REPETĂ … PÂNÂCÂND</h1>
+                    
+                <section class="container">
+
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ cattimp &#60;conditie> executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ daca &#60;conditie> atunci<br>
+                                │┌ repeta<br>
+                                ││     &#60;instructiuni><br>
+                                │└ panacand NOT &#60;conditie><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <h1>REPETĂ … PÂNĂCÂND → CÂTTIMP</h1>
+                    
+                <section class="container">
+
+                    <div class="right-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                ┌ repeta<br>
+                                │     &#60;instructiuni><br>
+                                └ panacand &#60;conditie>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left-section">
+                        <div class="text-container">
+                            <div class="text-box">
+                                &#60;instructiuni><br>
+                                ┌ cattimp NOT &#60;conditie> executa<br>
+                                │     &#60;instructiuni><br>
+                                └■
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </h2>
+        </section>
+</body>
+</html>

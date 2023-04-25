@@ -100,34 +100,29 @@ section .text-container .text-box {
     line-height: 25px;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .top-left-section {
-    position: relative;
-    top: 0;
-    left: 0;
     width: 50%;
     height: 50%;
   }
   
   .top-right-section {
-    position: relative;
-    top: 0;
-    right: 0;
     width: 50%;
     height: 50%;
   }
   
   .bottom-left-section {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 50%;
     height: 50%;
   }
   
   .bottom-right-section {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     width: 50%;
     height: 50%;
   }
